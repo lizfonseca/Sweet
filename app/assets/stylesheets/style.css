@@ -1,0 +1,163 @@
+/*----------- nav bar -----------*/
+/*---- * top segment * ---*/
+nav {
+  margin: 0px;
+  padding: 10px;
+}
+/*--------- *  * ---------*/
+
+/*------ * slogan * ------*/
+#sweet-tooth {
+  font-style: italic;
+  font-size: 12px;
+}
+/*--------- *  * ---------*/
+
+#logo {
+  width: 280px;
+}
+
+/*------ * slogan * ------*/
+.nav-segment {
+  border-top: 1px solid #F4A2C6;
+  border-radius: 20px;
+}
+/*--------- *  * ---------*/
+/*------------- * * -------------*/
+
+
+
+/*-------- main content --------*/
+/*---- * user greet * ----*/
+.greeting {
+  margin: -20px 0px 0px 0px;
+  padding: 0px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.greeting a{
+  color: #F4A2C6;
+}
+/*--------- *  * ---------*/
+
+/*---- * user greet * ----*/
+.header {
+  padding: 0px 10px;
+  text-align: center;
+}
+/*--------- *  * ---------*/
+
+/*---- * user greet * ----*/
+h5.subheader {
+  text-align: center;
+}
+
+.sh-content {
+  margin: 1px;
+  padding: 2% 5%;
+  font-size: 12px;
+}
+/*--------- *  * ---------*/
+
+/*------ * links * -------*/
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:active {
+  color: #F4A2C6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D01729;
+  text-decoration: underline;
+}
+
+a:visited {
+  /*color: #AAAAAA;*/
+  /*color: #742A4B;*/
+  color: #90101C;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+/*--------- *  * ---------*/
+
+/*----- * buttons * ------*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 22px;
+  padding: 0 6px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  float: left;
+  color: #FFF;
+  background-color: #F4A2C6;
+  border-color: #F4A2C6; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #C1809D;
+  border-color: #C1809D; }
+/*--------- *  * ---------*/
+/*------------- * * -------------*/
+
+
+
+/*-------- media queries --------*/
+@media (max-width: 1200px) {
+  nav{text-align: center;}
+}
+
+@media (max-width: 750px) {
+  nav{text-align: center;}
+}
+/*------------- * * -------------*/

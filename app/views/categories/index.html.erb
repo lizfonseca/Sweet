@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="header row">
+    <div class="twelve columns">
+      <h4>Categories</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <div class="sh-content">
+        <div class="four columns content">
+          <% @categories[0..@categories.length/3].each do |c| %>
+            <p><a href="/categories/<%= c.id %>/candies"><%= c.name %></a></p>
+          <% end %>
+        </div>
+        <div class="four columns">
+          <% @categories[@categories.length/3+1..2*@categories.length/3].each do |c| %>
+            <p><a href="/categories/<%= c.id %>/candies"><%= c.name %></a></p>
+          <% end %>
+        </div>
+        <div class="four columns">
+          <% @categories[2*@categories.length/3+1..-1].each do |c| %>
+            <p><a href="/categories/<%= c.id %>/candies"><%= c.name %></a></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

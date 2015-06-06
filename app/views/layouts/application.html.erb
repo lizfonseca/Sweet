@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SweetTooth</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="twelve column" >
+        <p id="sweet-tooth">
+          <a href="/">
+            <img src="https://trello-attachments.s3.amazonaws.com/556f9a7b5c6ff546cf2c5ad2/800x150/80b69a9280a862c5ec190550c963728c/sweettooth-05.png" id="logo" alt="SweetTooth logo">
+          </a>  
+        <br>
+          The sweetest app tailored for all candy enthusiasts!
+        </p>
+        <hr class="nav-segment">
+        <div class="twelve columns">
+          <p class="greeting">
+          <% if  %>
+            Welcome user!  <a href="#">LOGIN</a>
+            <% else %>
+            Welcome user!  <a href="#">LOGOUT</a>
+          <% end %>
+          </p>
+        </div>
+      </nav>
+    </div>
+  </div>
+<%= yield %>
+</body>
+</html>
