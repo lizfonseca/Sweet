@@ -6,14 +6,18 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  resource :sessions, only: [:new, :create, :destroy]
+  # resource :sessions, only: [:new, :create, :destroy]
 
-  resources :countries, only: :index do
-    resources :candies, except: :destroy
+  scope module: :countries do
+    resources :countries, only: :index do
+      resources :candies, except: :destroy
+    end
   end
 
-  resources :categories, only: :index do
-    resources :candies, except: :destroy
+  scope module: :categories do
+    resources :categories, only: :index do
+      resources :candies, except: :destroy
+    end
   end
 
 # ------------ * ------------ #
