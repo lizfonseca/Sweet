@@ -63,6 +63,8 @@ Path: /index
 
 ### [PostgreSQL](http://www.postgresql.org/ "PostgreSQL Homepage")
 
+### [Skeleton](http://getskeleton.com/ "Skeleton Homepage")
+
 ## Home, Sweet Home!
 
 Click [here](https://duckduckgo.com/?key=831f8865546b0011a3df07061eb38865ef82a5b286c12a8117d6cea84ed40d6b37eb308eb8219534bd6d5660fd05b8dd341ee04ed47adc36a67bde213d507037 "DuckDuckGo!") to visit the SweetTooth homepage!
