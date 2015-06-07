@@ -37,19 +37,19 @@ nav {
   text-align: right;
 }
 
-.greeting a{
+.greeting a {
   color: #F4A2C6;
 }
-/*--------- *  * ---------*/
+/*-------- *  * --------*/
 
-/*---- * user greet * ----*/
+/*--- * user greet * ---*/
 .header {
   padding: 0px 10px;
   text-align: center;
 }
-/*--------- *  * ---------*/
+/*-------- *  * --------*/
 
-/*---- * user greet * ----*/
+/*---- * content * -----*/
 h5.subheader {
   text-align: center;
 }
@@ -59,9 +59,9 @@ h5.subheader {
   padding: 2% 5%;
   font-size: 12px;
 }
-/*--------- *  * ---------*/
+/*-------- *  * --------*/
 
-/*------ * links * -------*/
+/*----- * links * ------*/
 a {
   color: #000000;
   text-decoration: none;
@@ -78,18 +78,50 @@ a:hover {
 }
 
 a:visited {
-  /*color: #AAAAAA;*/
-  /*color: #742A4B;*/
   color: #90101C;
   text-decoration: none;
 }
 
-.button:hover {
-  text-decoration: none;
+#back-button {
+  border: 1px solid #bbb;
+  line-height: 20px;
+  height: 20px;
+  float: left;
 }
-/*--------- *  * ---------*/
 
-/*----- * buttons * ------*/
+#add-form {
+  float: right;
+  line-height: 20px;
+  height: 20px;
+}
+
+#back-button:hover {
+  border: 1px solid #F4A2C6;
+  color: #F4A2C6;
+}
+
+.buttons-area.button {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 20px;
+  height: 20px;
+  margin: 0 20px;
+}
+
+.form-buttons-area {
+  display: inline-block;
+}
+
+#submit-button {
+  float: right;
+  margin-left: 20px;
+}
+/*-------- *  * --------*/
+
+/*-------- buttons --------*/
+
+/*------ * pink * ------*/
 .button,
 button,
 input[type="submit"],
@@ -124,7 +156,8 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+  outline: 0;
+  text-decoration: none; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -147,7 +180,7 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #C1809D;
   border-color: #C1809D; }
-/*--------- *  * ---------*/
+/*-------- *  * --------*/
 /*------------- * * -------------*/
 
 

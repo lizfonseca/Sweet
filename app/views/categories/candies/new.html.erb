@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="header row">
+    <h4>Add Candy!</h4>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <div class="sh-content">
+        <h6><em>Please make sure to fill in <u>all</u> form fields before submitting</em> :)</h6> 
+        <!-- Form starts here -->
+        <form action="/categories/<%= @category.id %>/candies" method="POST">
+          <!-- Form fields start here -->
+          <div class="row">
+            <div class="three columns">
+              <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+              <label>Candy Name</label>
+              <input class="u-full-width" type="text" name="name" value="<%= @candy.name %>">
+            </div>
+            <div class="four columns">
+              <label>Company Name</label>
+              <input class="u-full-width" type="text" name="company" value="<%= @candy.company %>">
+            </div>
+            <div class="three columns">
+              <label>Category</label>
+              <select class="u-full-width">
+                <option>Select one</option>
+              <% @categories.each do |c| %>
+                <option name="category_id" value="<%= @candy.category_id %>"><%= c.name %></option>
+              <% end %>
+              </select>
+            </div>
+            <div class="two columns">
+              <label>Discontinued?</label>
+              <select class="u-full-width" name="discontinued">
+                <option value="false">No, yay! :D</option>
+                <option value="true">Yes, boo! D:</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="nine columns">
+                <label>Image Link</label>
+                <input type="text" class="u-full-width" name="image_link">
+              </div>
+              <div class="three columns">
+                <label>Country</label>
+                  <select class="u-full-width">
+                  <option>Select one</option>
+                <% @countries.each do |c| %>
+                  <option name="country_id" value="<%= c.id %>"><%= c.name %></option>
+                <% end %>
+                </select>
+              </div>
+              <div class="twelve columns">
+                <label>Description</label>
+                <input type="text" class="u-full-width" name="description" value="<%= @candy.description %>">
+              </div>
+            </div>
+          </div>
+          <!-- Form fields end here -->
+          <!-- Buttons start here -->
+          <div class="form-buttons-area">
+            <a class="button" href="\">Cancel</a>
+            <input class="button button-primary" id="submit-button" type="submit" value="Submit">
+          </div>
+          <!-- Buttons stop here -->
+        </form>
+        <!-- Form ends here -->
+      </div>
+    </div>
+  </div>
+</div>
