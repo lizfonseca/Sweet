@@ -23,8 +23,8 @@ module Categories
     def create
       @countries = Country.all
       @category = Category.find(params[:category_id])
-      @candy = Candy.new
 
+      @candy = Candy.new
       @candy.name = params[:name]
       @candy.company = params[:company]
       @candy.image_link = params[:image_link]
@@ -40,5 +40,6 @@ module Categories
         render :new
       end
     end
+    
   end
 end
