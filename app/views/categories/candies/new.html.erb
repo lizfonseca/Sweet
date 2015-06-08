@@ -21,10 +21,10 @@
             </div>
             <div class="three columns">
               <label>Category</label>
-              <select class="u-full-width">
+              <select name="category_id" class="u-full-width">
                 <option>Select one</option>
               <% @categories.each do |c| %>
-                <option name="category_id" value="<%= @candy.category_id %>"><%= c.name %></option>
+                <option value="<%= c.id %>"><%= c.name %></option>
               <% end %>
               </select>
             </div>
@@ -42,10 +42,10 @@
               </div>
               <div class="three columns">
                 <label>Country</label>
-                  <select class="u-full-width">
+                  <select name="country_id" class="u-full-width">
                   <option>Select one</option>
                 <% @countries.each do |c| %>
-                  <option name="country_id" value="<%= c.id %>"><%= c.name %></option>
+                  <option  value="<%= c.id %>"><%= c.name %></option>
                 <% end %>
                 </select>
               </div>

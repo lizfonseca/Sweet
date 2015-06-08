@@ -2,8 +2,13 @@ module Categories
   class CandiesController < ApplicationController
     def index
       @category = Category.find(params[:category_id])
-      @candies = Candy.all
-      render :index
+      @candies = Candy.where(category_id: params[:category_id])
+
+      if @candies.length == 0
+        render :empty
+      else
+        render :index
+      end
     end
 
     def new
@@ -27,12 +32,13 @@ module Categories
       @candy.country_id = params[:country_id]
       @candy.category_id = params[:category_id]
       @candy.discontinued = params[:discontinued]
+      # byebug
 
       if @candy.save
         redirect_to category_candies_path
       else 
         render :new
-    end
+      end
     end
   end
 end

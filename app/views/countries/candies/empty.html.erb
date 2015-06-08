@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="header row">
+    <div class="twelve columns">
+      <h4><%= @category.name %></h4>
+    </div>
+    <div class="twelve columns buttons-area">
+      <a class="button" id="back-button" href="/">Back</a>
+      <a class="button button-primary" id="add-form" href="/categories/<%= @category.id %>/candies/new">Add Candy</a>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <div class="sh-content">
+            <p>It seems that we lack candy in this category. <em>Why not add some candy?</em> ;)</p>
+      </div>
+    </div>
+  </div>
+</div>
