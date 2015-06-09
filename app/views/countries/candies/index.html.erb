@@ -3,14 +3,18 @@
     <div class="twelve columns">
       <h4><%= @country.name %></h4>
     </div>
+    <!-- Top buttons area starts here -->
     <div class="twelve columns buttons-area">
       <a class="button" id="back-button" href="/">Back</a>
       <a class="button button-primary" id="add-form" href="/countries/<%= @country.id %>/candies/new">Add Candy</a>
     </div> 
   </div>
+  <!-- Top buttons area ends here -->
+  <!-- Main content area starts here -->
   <div class="row">
     <div class="twelve columns">
       <div class="sh-content">
+      <!-- content divided into 4 even columns -->
         <div class="three columns content">
           <% @candies[0..@candies.length/4].each do |c| %>
             <p><a href="/countries/<%= @country.id %>/candies/<%= c.id %>"><%= c.name %></a></p>
@@ -31,7 +35,9 @@
             <p><a href="/countries/<%= @country.id %>/candies/<%= c.id %>"><%= c.name %></a></p>
           <% end %>
         </div>
+        <!-- content division ends here -->
       </div>
     </div>
   </div>
+  <!-- Main content area ends here -->
 </div>

@@ -42,7 +42,7 @@ nav {
 }
 /*-------- *  * --------*/
 
-/*--- * user greet * ---*/
+/*--- * header text * ---*/
 .header {
   padding: 0px 10px;
   text-align: center;
@@ -59,6 +59,43 @@ h5.subheader {
   padding: 2% 5%;
   font-size: 12px;
 }
+
+div.candy-info {
+  background-color: #F4A2C6;
+  padding: 25px 20px 0px 20px;
+  height: 400px;
+  overflow: auto;
+}
+
+.subtitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.description {
+  font-style: bold;
+  color: #FFF;
+}
+
+h6.description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  line-height: .1rem;
+}
+
+p.candy-info {
+  font-size: 13px;
+  text-align: left;
+}
+
+hr.description {
+  border-color: #D01729;
+  opacity: 0.4;
+}
+
 /*-------- *  * --------*/
 
 /*----- * links * ------*/
@@ -89,7 +126,7 @@ a:visited {
   float: left;
 }
 
-#add-form {
+#add-form, #form-button {
   float: right;
   line-height: 20px;
   height: 20px;

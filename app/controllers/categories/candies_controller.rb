@@ -41,5 +41,12 @@ module Categories
       end
     end
     
+      def show
+        @category = Category.find(params[:category_id])
+        @candy = Candy.find(params[:id])
+
+        render :show
+      end
+
   end
 end

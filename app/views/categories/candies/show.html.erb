@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="header row">
+    <div class="twelve columns">
+      <h4><%= @candy.name %></h4>
+    </div>
+    <!-- Top buttons area starts here -->
+    <div class="twelve columns buttons-area">
+      <a class="button" id="back-button" href="/categories/<%= @category.id %>/candies/">Back</a>
+      <a class="button button-primary" id="form-button" href="/categories/<%= @category.id %>/candies/edit">Edit Info</a>
+    </div> 
+  </div>
+  <!-- Top buttons area ends here -->
+  <!-- Main content area starts here -->
+  <div class="row">
+    <div class="twelve columns">
+      <!-- content divided into 2 columns -->
+        <!-- candy image goes here -->
+        <div class="eight columns content">
+          <img class="u-full-width" src="<%= @candy.image_link %>" alt="<%= @candy.name %>">
+        </div>
+        <!-- candy image ends here -->
+        <!-- candy info starts here -->
+        <div class="four columns">
+          <div class="candy-info">
+            <h6 class="subtitle">Information</h6>
+            <hr class="description">
+            <h6 class="description">Company Name</h6>
+            <p class="candy-info"><%= @candy.company %></p>
+            <h6 class="description">Description</h6>
+            <p class="candy-info"><%= @candy.description %></p>
+            <h6 class="description">Discontinued?</h6>
+            <% if @candy.discontinued == true %>
+            <p class="candy-info">This candy is not available anymore. Aww! D:</p>
+            <% else %>
+            <p class="candy-info">This candy is still available. Yay! :D</p>
+            <% end %>
+            <hr class="description">
+          </div>
+        </div>
+        <!-- candy info ends here -->
+      <!-- content division ends here -->
+    </div>
+  </div>
+  <!-- Main content area ends here -->
+</div>
