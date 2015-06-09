@@ -27,7 +27,26 @@ A candy enthusiast (CE) has access to the following features:
 + Candies can belong to a country.
 + Users have access to the candies, categories, and countries tables.
 
-### [Wireframes](https://trello.com/c/x87kFvzr/16-wireframes)
+### Wireframes
+
+![Index Page](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/2d949c35dde23645a47d6e48b42f4f03/guest_index.png)
+
+![Index Page](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/2d949c35dde23645a47d6e48b42f4f03/guest_index.png)
+
+![Country Index](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/5cebf886167e9f631587c29a14555eed/candyland.png)
+
+![Countries Index](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/98b1669829bb116ed1f1ec7bbb072194/candylands.png)
+
+![Categories Index](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/df2f44c569b27971768cab2a988585ca/categories.png)
+
+![Category Index](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/d613c8731c6db1c4c84b7e70ba5e384f/category.png)
+
+![Candy Page](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/a31e6f8a551daf058dba0ad275c7243f/single_candy.png)
+
+![Candy Add](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/b111a8b9091918772a22cf174813eba3/add_a_candy_form.png)
+
+![Candy Update](https://trello-attachments.s3.amazonaws.com/556f84c81a1fbbe889611a92/960x560/45059323fd011060e2a34656346ada92/edit_the_candy_form.png)
+
 
 ## Technologies
 
