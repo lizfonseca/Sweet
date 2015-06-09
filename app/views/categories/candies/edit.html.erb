@@ -25,15 +25,24 @@
               <select name="category_id" class="u-full-width">
                 <option>Select one</option>
               <% @categories.each do |c| %>
+                <% if @candy.category_id == c.id %>
+                <option value="<%= c.id %>" selected="selected"><%= c.name %></option>
+                <% else %>
                 <option value="<%= c.id %>"><%= c.name %></option>
+                <% end %>
               <% end %>
               </select>
             </div>
             <div class="two columns">
               <label>Discontinued?</label>
               <select class="u-full-width" name="discontinued">
+              <% if @candy.discontinued == true %>
+                <option value="true" selected="selected">Yes, boo! D:</option>
                 <option value="false">No, yay! :D</option>
+              <% else %>
                 <option value="true">Yes, boo! D:</option>
+                <option value="false" selected="selected">No, yay! :D</option>
+              <% end %>  
               </select>
             </div>
             <div class="row">
@@ -46,7 +55,11 @@
                   <select name="country_id" class="u-full-width">
                   <option>Select one</option>
                 <% @countries.each do |c| %>
-                  <option  value="<%= c.id %>"><%= c.name %></option>
+                  <% if @candy.country_id == c.id %>
+                  <option value="<%= c.id %>" selected="selected"><%= c.name %></option>
+                  <% else %>
+                  <option value="<%= c.id %>"><%= c.name %></option>
+                  <% end %>
                 <% end %>
                 </select>
               </div>
@@ -59,7 +72,7 @@
           <!-- Form fields end here -->
           <!-- Buttons start here -->
           <div class="form-buttons-area">
-            <a class="button" href="\">Cancel</a>
+            <a class="button" href="/categories/<%= @category.id %>/candies/<%= @candy.id%>">Cancel</a>
             <input class="button button-primary" id="submit-button" type="submit" value="Submit">
           </div>
           <!-- Buttons stop here -->
