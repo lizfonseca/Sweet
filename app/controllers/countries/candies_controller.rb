@@ -33,7 +33,6 @@ module Countries
       @candy.country_id = params[:country_id]
       @candy.category_id = params[:category_id]
       @candy.discontinued = params[:discontinued]
-      # byebug
       # control flow for data
       if @candy.save
         redirect_to country_candies_path
@@ -43,11 +42,31 @@ module Countries
     end
 
     def show
+      # variables needed to render view
       @country = Country.find(params[:country_id])
       @candy= Candy.find(params[:id])
 
       render :show
     end
 
+    def edit
+      # variables needed to render view
+      @countries = Country.all
+      @categories = Category.all
+      @country = Country.find(params[:country_id])
+      @candy = Candy.find(params[:id])      
+      # byebug
+
+      render :edit  
+    end
+    
+    def update
+      # variables needed to save into database
+      if @candy.update_attributes(params[:candy])
+        redirect_to country_candies_path
+      else 
+        render :new
+      end
+    end
   end
 end
