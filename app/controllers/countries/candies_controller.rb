@@ -55,18 +55,19 @@ module Countries
       @categories = Category.all
       @country = Country.find(params[:country_id])
       @candy = Candy.find(params[:id])      
+      # byebug
 
       render :edit  
     end
     
     def update
       # variables needed to save into database
-      byebug
       if @candy.update_attributes(params[:candy])
         redirect_to country_candies_path
       else 
         render :new
       end
     end
+
   end
 end
